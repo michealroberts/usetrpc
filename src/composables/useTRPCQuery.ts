@@ -52,6 +52,8 @@ export function useTRPCQuery<TRouter extends AnyRouter>(
   const response = ref<inferQueryOutput<TRouter, TPath<TRouter>>>()
 
   ;(async () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment     
+    // @ts-ignore
     const data = await client.query(path, ...args)
     response.value = data
   })()
