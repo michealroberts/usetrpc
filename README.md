@@ -11,7 +11,7 @@ npm install @trpc/vue
 or
 
 ```bash
-yarn(pnpm) add @observerly/polaris
+yarn(pnpm) add @trpc/vue
 ```
 
 Then, you can simply import what you need:
