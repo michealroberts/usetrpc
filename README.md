@@ -27,7 +27,10 @@ Instantiating a tRPC client:
 ```ts
 import { useTRPCClient } from '@trpc/vue'
 
-const { client } = useTRPCClient({
+// import your router, e.g.:
+import type { AppRouter } from './server/router'
+
+const { client } = useTRPCClient<AppRouter>({
   url: 'http://localhost:3000/trpc'
 })
 ```
