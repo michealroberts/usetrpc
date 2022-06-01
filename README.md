@@ -4,7 +4,7 @@ A composables Vue 3 library for using a tRPC.io client, bringing end-to-end type
 
 Please reference the tRPC documenation (https://trpc.io/docs/)[https://trpc.io/docs/] before using this library.
 
-**N.B**. *This library is a work in progress and is not yet ready for usage.*
+**N.B**. *This library is a work in progress and is not yet ready for usage in production.*
 
 ## Installation
 
