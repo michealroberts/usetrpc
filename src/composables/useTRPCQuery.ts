@@ -28,12 +28,24 @@ export function useTRPCQuery<
 ) {
   const response = ref<Awaited<ThenArg<ReturnType<AppRouter['_def']['queries'][TPath]['call']>>>>()
 
-  ;(async () => {
+  const fetchQuery = async () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const data = await client.query(...pathAndInput)
     response.value = data
+  }
+
+  const refetchQuery = async () => {
+    fetchQuery()
+  }
+
+  ;(async () => {
+    fetchQuery()
   })()
 
-  return response
+  return {
+    response,
+    fetchQuery,
+    refetchQuery
+  }
 }
