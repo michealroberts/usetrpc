@@ -87,7 +87,7 @@ export const useTelescopes = (client: TRPCClient<AppRouter>) => {
 - [X] Add useQuery() composable
 - [X] Improve type inference for useQuery()
 - [ ] Add comprehensive usage tests for useQuery()
-- [ ] Add useMutation()
+- [X] Add useMutation()
 - [ ] Add comprehensive usage tests for useMutation()
 - [ ] Add useSubscription()
 - [ ] Add comprehensive usage tests for useSubscription()
